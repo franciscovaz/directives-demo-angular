@@ -1,14 +1,50 @@
-<button class="btn btn-primary" (click)="setChoice(1)">Button 1</button>
-<button class="btn btn-primary" (click)="setChoice(2)">Button 2</button>
-<button class="btn btn-primary" (click)="setChoice(3)">Button 3</button>
-<button class="btn btn-primary" (click)="setChoice(4)">Button 4</button>
+<button class="btn btn-link" (click)="setChoice(1)">Tiger</button>
+<button class="btn btn-link" (click)="setChoice(2)">Eagle</button>
+<button class="btn btn-link" (click)="setChoice(3)">Dog</button>
+<button class="btn btn-link" (click)="setChoice(4)">Cheeta</button>
 
 <div [ngSwitch]="choice">
 
-  <div *ngSwitchCase="1">This is div number 1</div>
-  <div *ngSwitchCase="2">This is div number 2</div>
-  <div *ngSwitchCase="3">This is div number 3</div>
-  <div *ngSwitchCase="4">This is div number 4</div>
+  <div *ngSwitchCase="1">
+    <div class="row">
+      <div class="col">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg/440px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg" alt="Tiger">
+      </div>
+      <div class="col">
+        The tiger (Panthera tigris) is the largest extant cat species and a member of the genus Panthera. It is most recognisable for its dark vertical stripes on orange-brown fur with a lighter underside. It is an apex predator, primarily preying on ungulates such as deer and wild boar. It is territorial and generally a solitary but social predator, requiring large contiguous areas of habitat, which support its requirements for prey and rearing of its offspring. Tiger cubs stay with their mother for about two years, before they become independent and leave their mother's home range to establish their own.
+      </div>
+    </div>
+  </div>
+  <div *ngSwitchCase="2">
+    <div class="row">
+      <div class="col">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/%C3%81guila_calva.jpg/440px-%C3%81guila_calva.jpg" alt="Eagle">
+      </div>
+      <div class="col">
+        Eagle is the common name for many large birds of prey of the family Accipitridae. Eagles belong to several groups of genera, not all of which are closely related. Most of the 60 species of eagle are from Eurasia and Africa.[1] Outside this area, just 14 species can be found—2 in North America, 9 in Central and South America, and 3 in Australia. It is nicknamed the king of all birds.
+      </div>
+    </div>
+  </div>
+  <div *ngSwitchCase="3">
+    <div class="row">
+      <div class="col">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Collage_of_Nine_Dogs.jpg/600px-Collage_of_Nine_Dogs.jpg" alt="Dog">
+      </div>
+      <div class="col">
+        The dog (Canis familiaris when considered a distinct species or Canis lupus familiaris when considered a subspecies of the wolf)[5] is a domesticated carnivore of the family Canidae. It is part of the wolf-like canids,[6] and is the most widely abundant terrestrial carnivore.[7][8][9][10][11] The dog and the extant gray wolf are sister taxa as modern wolves are not closely related to the wolves that were first domesticated,[12][13][14] which implies that the direct ancestor of the dog is extinct.[15] The dog was the first species to be domesticated,[14][16] and has been selectively bred over millennia for various behaviors, sensory capabilities, and physical attributes.[17]
+      </div>
+    </div>
+  </div>
+  <div *ngSwitchCase="4">
+    <div class="row">
+      <div class="col">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Cheeta.jpg" alt="Cheeta">
+      </div>
+      <div class="col">
+        Cheeta (sometimes billed as Cheetah, Cheta, and Chita) is a chimpanzee character that appeared in numerous Hollywood Tarzan films of the 1930s–1960s, as well as the 1966–1968 television series, as the ape sidekick of the title character, Tarzan. Cheeta has usually been characterized as male, but sometimes as female, and has been portrayed by chimpanzees of both sexes.
+      </div>
+    </div>
+  </div>
 
 </div>
 
