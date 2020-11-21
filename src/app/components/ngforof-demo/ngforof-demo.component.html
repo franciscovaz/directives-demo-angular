@@ -2,6 +2,9 @@
 
 <hr>
 
+<h4 *ngIf="people.length>0">There is {{people.length}} contacts on your list</h4>
+<h4 *ngIf="people.length===0">You dont have contacts on your list</h4>
+
 <ul>
   <!-- <li *ngFor="let peps of people" [ngClass]="{'text-success': peps.age>=18, 'text-danger': peps.age < 18}"> -->
   <li *ngFor="let peps of people; index as i" [ngClass]="getCssClass(peps.age)">
