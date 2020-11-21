@@ -4,10 +4,12 @@
 
 <ul>
   <!-- <li *ngFor="let peps of people" [ngClass]="{'text-success': peps.age>=18, 'text-danger': peps.age < 18}"> -->
-  <li *ngFor="let peps of people" [ngClass]="getCssClass(peps.age)">
+  <li *ngFor="let peps of people; index as i" [ngClass]="getCssClass(peps.age)">
     <!-- <img [src]="peps.picture" alt="{{peps.name}}" width="100px" height="100px"> -->
     <!-- <img [src]="peps.picture" alt="{{peps.name}}" [ngStyle]="{width: '100px'}"> -->
     <img [src]="peps.picture" alt="{{peps.name}}" [ngStyle]="imgStyles">
     {{peps.name}} is from {{peps.city}}
+
+    <button class="btn btn-warning" (click)="deletePerson(i)">X</button>
   </li>
 </ul>

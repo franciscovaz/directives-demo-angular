@@ -43,4 +43,8 @@ export class NgforofDemoComponent implements OnInit {
     }
   }
 
+  deletePerson(index: number){
+    this.people.splice(index, 1)
+  }
+
 }
